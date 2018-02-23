@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/computer_typing_banner.jpg" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="html/blog.html">BLOG</a></li>
+            <li><a href="html/projects.html">PROJECTS</a></li>
+            <li><a href="html/contact.html">CONTACT</a></li>
+            <li><a href="html/about.html">ABOUT</a></li>
+            <li><a href="html/now.html">NOW</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section class="home">
+
+            <article>
+                <img src="img/kode.png" alt="">
+                <h1> Webserver </h1>
+                <p>This is the first hing I have written in GOlang. It was the way I chose to present my first website.</p>
+            </article>
+
+            <article>
+                <img src="img/gopher3.png" alt="">
+                <h1> Do Less. Enable More. </h1>
+                <p>The is is the first real blogpost. This blog is made as one of my project on road to become a computer engineer.</p>
+            </article>
+
+            <article>
+                <img src="img/ItsAlive.jpg" alt="">
+                <h1> Blog is live </h1>
+                <p>The blog is live! Right now I don't know how much I'll be using this blog. </p>
+            </article>
+
+            <article>
+                <img src="img/b2b-social-media.jpg" alt="">
+                <h1> Social media </h1>
+                <p>Dont forget to visit my social media</p>
+                <p> <a href="www.github.com/pr0xity">Github</a><br>
+                    <a href="https://angel.co/sakarias">Angel</a><br>
+                    <a href="https://www.linkedin.com/in/sakarias-s%C3%A6terst%C3%B8l-1848007b/">Linkedin</a>
+                </p>
+            </article>
+
+
+
+        </section>
+
+        <aside>
+            <div id="fb-feed">
+
+            </div>
+
+            <div id="twitter-feed">
+                <a class="twitter-timeline" data-lang="en" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/pr0xity">Tweets by pr0xity</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        Copyright &copy; Sakarias Sæterstøl 2017
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../img/computer_typing_banner.jpg" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="now.html">NOW</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section class="blog">
+
+            <article class="post">
+                <img width="50%" height="" src="../img/kode.png" alt="">
+                <h1> Webserver </h1>
+                <p>This is the first hing I have written in GOlang. It was the way I chose to <br> present my first website.
+                </p>
+                <p> package main<br>
+                    <br> import (<br> "fmt"
+                    <br> "log"
+                    <br> "net/http"
+                    <br>
+                    <br> "github.com/gorilla/mux"
+                    <br> )
+                    <br>
+                    <br> func main() {<br> r := mux.NewRouter()<br>
+                    <br> r.PathPrefix("/").Handler(http.FileServer(http.Dir("./public/")))
+                    <br> http.Handle("/", r)<br>
+                    <br> // Starting server<br> fmt.Printf("Starting server on port \"4000\" ...")<br> log.Fatal(http.ListenAndServe(":4000", nil))<br> }
+                    <br>
+                </p>
+            </article>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        Copyright &copy; Sakarias Sæterstøl 2017
+    </footer>
+</body>
+
+</html>

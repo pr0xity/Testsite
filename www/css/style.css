@@ -1,0 +1,156 @@
+body {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+.post iframe {
+    float: right;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 980px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover {
+    background-color: gray;
+}
+
+nav {
+    background-color: darkgray;
+    margin: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+    padding: 5px;
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main:before,
+main:after {
+    content: "";
+    display: table;
+}
+
+main:after {
+    clear: both;
+}
+
+main {
+    clear: both;
+}
+
+section {
+    float: left;
+    margin: 1.5%;
+    width: 63%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section.blog {
+    all: inherit;
+    width: 80%;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog article {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    margin: 1.2%;
+    background: gray;
+    border-radius: 6px;
+    display: block;
+    padding: 15px 15px;
+}
+
+.blog h1 {
+    text-align: center;
+}
+
+article {
+    position: relative;
+    display: inline-block;
+    width: 43%;
+    height: 50%;
+    margin: 1.2%;
+    background: gray;
+    border-radius: 6px;
+    display: block;
+    padding: 15px 15px;
+}
+
+.home article {
+    height: 180px;
+}
+
+.home img {
+    height: 150px;
+    width: 150px;
+}
+
+article img {
+    border-radius: 6px;
+    float: right;
+}
+
+aside {
+    float: right;
+    margin: 1.5%;
+    width: 30%;
+}
+
+footer {
+    clear: both;
+    background-color: darkgray;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+th {
+    width: 30%;
+    height: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+td,
+th {
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 5px solid darkgray;
+}
